@@ -1,6 +1,6 @@
 ﻿/* site.css */
-body {
-    font-family: sans-serif; 
+/*body {
+    font-family: sans-serif;
     font-size: 14px;
     margin: 0;
 }
@@ -12,22 +12,22 @@ label {
 
 input[type=text], input[type=password], textarea {
     width: 150px;
-}
+}*/
 
-#main {
+/*#main {
     background-color: #eee;
     padding: 4px;
     margin: 0;
 }
 
 #footer {
-    background-color:#222;
+    background-color: #222;
     color: #eee;
     padding: 8px 5px;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
+}*/
 
 .headshot {
     max-width: 50px;
@@ -40,7 +40,7 @@ input[type=text], input[type=password], textarea {
 }
 
 .menu li {
-    list-style-type: none;
+list-style-type: none;
 }
 
 .menu li.active {
@@ -48,7 +48,7 @@ input[type=text], input[type=password], textarea {
 }
 
 .menu li a {
-	color: #eee;
+    color: #eee;
 }
 
 #sidebar {
@@ -60,20 +60,32 @@ input[type=text], input[type=password], textarea {
     overflow: hidden;
     left: 0;
     margin: 0;
+    -moz-transition: left ease .25s;
+    -o-transition: left ease .25s;
+    -webkit-transition: left ease .25s;
     transition: left ease .25s;
 }
 
 #sidebar.hide-sidebar {
-	left: -250px;
-	transition: left ease .25s;
+    left: -250px;
+    -moz-transition: left ease .25s;
+    -o-transition: left ease .25s;
+    -webkit-transition: left ease .25s;
+    transition: left ease .25s;
 }
 
 #wrapper {
     margin: 0 0 0 250px;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s;
     transition: margin-left ease .25s;
 }
 
 #wrapper.hide-sidebar {
-	margin-left: 0;
-	transition: margin-left ease .25s;
+    margin-left: 0;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s;
+    transition: margin-left ease .25s;
 }
