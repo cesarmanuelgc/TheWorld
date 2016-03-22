@@ -47,6 +47,10 @@ input[type=text], input[type=password], textarea {
     font-weight: bold;
 }
 
+.menu li a {
+	color: #eee;
+}
+
 #sidebar {
     background: #2a2c36;
     color: #eee;
@@ -56,8 +60,20 @@ input[type=text], input[type=password], textarea {
     overflow: hidden;
     left: 0;
     margin: 0;
+    transition: left ease .25s;
+}
+
+#sidebar.hide-sidebar {
+	left: -250px;
+	transition: left ease .25s;
 }
 
 #wrapper {
     margin: 0 0 0 250px;
+    transition: margin-left ease .25s;
+}
+
+#wrapper.hide-sidebar {
+	margin-left: 0;
+	transition: margin-left ease .25s;
 }

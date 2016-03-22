@@ -22,6 +22,7 @@ namespace TheWorld
         {
             app.UseDefaultFiles();
             app.UseStaticFiles();
+
             //app.Run(async (context) =>
             //{
             //    await context.Response.WriteAsync($"Hello World: {context.Request.Path}");

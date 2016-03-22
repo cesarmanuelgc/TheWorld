@@ -1,9 +1,13 @@
-﻿<Properties StartupItem="src/TheWorld/TheWorld.xproj">
+﻿<Properties StartupItem="src/TheWorld/TheWorld.xproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="web|dnxcore50" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/TheWorld/wwwroot/Index.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/TheWorld/wwwroot/js/site.js">
     <Files>
-      <File FileName="src/TheWorld/project.json" Line="1" Column="1" />
-      <File FileName="src/TheWorld/wwwroot/Index.html" Line="11" Column="28" />
+      <File FileName="src/TheWorld/project.json" Line="23" Column="15" />
+      <File FileName="src/TheWorld/Startup.cs" Line="36" Column="1" />
+      <File FileName="src/TheWorld/wwwroot/Index.html" Line="30" Column="30" />
+      <File FileName="src/TheWorld/Properties/launchSettings.json" Line="19" Column="28" />
+      <File FileName="src/TheWorld/Project_Readme.html" Line="1" Column="1" />
+      <File FileName="src/TheWorld/wwwroot/js/site.js" Line="2" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

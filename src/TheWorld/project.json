@@ -5,6 +5,7 @@
   },
 
   "dependencies": {
+	"AutoMapper": "4.2.1", 
     "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
     "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final"
   },
