@@ -1,6 +1,7 @@
 ﻿{
   "AppSettings": {
-    "SiteEmailAddress": "me@aol.com"
+    "SiteEmailAddress": "me@aol.com",
+    "BingKey": "AvbAFDs3POYXRcoD25EZoredtt4Ql8DTGGbqeyaefTKo_GKOgyqdSSrReg3LR_WU"
   },
   "Data": {
     "WorldContextConnection": "Server=(localdb)\\ProjectsV12;Database=TheWorldDB;Trusted_Connection=true;MultipleActiveResultSets=true;"
