@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,20 +9,34 @@ namespace TheWorld.Models
     public class WorldContextSeedData
     {
         private WorldContext _context;
+        private UserManager<WorldUser> _userManager;
 
-        public WorldContextSeedData(WorldContext context)
+        public WorldContextSeedData(WorldContext context, UserManager<WorldUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
-        public void EnsureSeedData()
+        public async Task EnsureSeedDataAsync()
         {
+            if(await _userManager.FindByEmailAsync("cgonzalez@cmdesarrollo.com.mx") == null)
+            {
+                // Add user
+                var newUser = new WorldUser()
+                {
+                    UserName = "cgonzalez",
+                    Email = "cgonzalez@cmdesarrollo.com.mx"
+                };
+
+                await _userManager.CreateAsync(newUser, "P@ssw0rd!");
+            }
+
             if(!_context.Trips.Any())
             {
                 var usTrip = new Trip()
                 {
                     Name = "US Trip",
                     Created = DateTime.UtcNow,
-                    UserName = "",
+                    UserName = "cgonzalez",
                     Stops = new List<Stop>()
                     {
                         new Stop() {  Name = "Atlanta, GA", Arrival = new DateTime(2014, 6, 4), Latitude = 33.748995, Longitude = -84.387982, Order = 0 },
@@ -40,7 +55,7 @@ namespace TheWorld.Models
                 {
                     Name = "Wolrd Trip",
                     Created = DateTime.UtcNow,
-                    UserName = "",
+                    UserName = "cgonzalez",
                     Stops = new List<Stop>()
                     {
                         new Stop() { Order = 0, Latitude =  33.748995, Longitude =  -84.387982, Name = "Atlanta, Georgia", Arrival = DateTime.Parse("Jun 3, 2014") },
